@@ -5,26 +5,3 @@
 }
 
 <h1>Weather Information</h1>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Summary</th>
-            <th>Date</th>
-            <th>C</th>
-            <th>F</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.WeatherList)
-        {
-            <tr>
-                <td>@item.Summary</td>
-                <td>@item.Date</td>
-                <td>@item.TemperatureC</td>
-                <td>@item.TemperatureF</td>
-            </tr>
-        }
-
-    </tbody>
-</table>
