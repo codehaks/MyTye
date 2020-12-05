@@ -27,6 +27,7 @@ namespace MyApp
                 options.LogTo(Console.WriteLine);
             });
             services.AddControllers();
+            services.AddHttpClient<WeatherClient>();
 
             services.AddRazorPages()
                 .AddRazorRuntimeCompilation();
